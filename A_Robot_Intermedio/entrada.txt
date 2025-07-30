@@ -1,0 +1,13 @@
+Robot r2
+r2.iniciar
+r2.garra = 30
+r2.velocidad = 40
+r2.base = 90
+r2.velocidad = 50
+r2.hombro = 45
+r2.velocidad = 45
+r2.codo = 45
+r2.velocidad = 40
+r2.garra = 60
+r2.velocidad = 55
+r2.finalizar

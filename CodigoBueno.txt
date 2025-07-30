@@ -1,0 +1,222 @@
+EJEMPLO 1: EJECUCIÓN ÚNICA (Movimiento Directo)
+El robot se mueve a posiciones específicas sin retornar al origen
+
+Robot r2
+r2.iniciar
+r2.garra = 30
+r2.velocidad = 40
+r2.base = 90
+r2.velocidad = 50
+r2.hombro = 45
+r2.velocidad = 45
+r2.codo = 45
+r2.velocidad = 40
+r2.garra = 45
+r2.velocidad = 55
+r2.finalizar
+
+
+EJEMPLO 2: IDA Y VUELTA (Pick & Place)
+El robot va a posiciones máximas y regresa al origen simulando manipulación de objetos
+
+Robot r3
+r3.iniciar
+r3.base = 180
+r3.velocidad = 40
+r3.hombro = 90
+r3.velocidad = 35
+r3.codo = 180
+r3.velocidad = 30
+r3.garra = 90
+r3.velocidad = 45
+r3.base = 0
+r3.velocidad = 40
+r3.hombro = 0
+r3.velocidad = 35
+r3.codo = 0
+r3.velocidad = 30
+r3.garra = 0
+r3.velocidad = 45
+r3.finalizar
+
+
+EJEMPLO 3: REPETICIÓN (Ciclo - Múltiples Objetos)
+
+ El robot repite la secuencia de manipulación 2 veces
+```
+Robot r2
+r2.iniciar
+r2.repetir = 2 {
+    r2.garra = 0
+    r2.velocidad = 35
+    r2.base = 180
+    r2.velocidad = 45
+    r2.hombro = 135
+    r2.velocidad = 40
+    r2.codo = 90
+    r2.velocidad = 35
+    r2.garra = 90
+    r2.velocidad = 50
+    r2.base = 0
+    r2.velocidad = 45
+    r2.hombro = 0
+    r2.velocidad = 40
+    r2.codo = 0
+    r2.velocidad = 35
+}
+r2.finalizar
+
+
+
+---
+
+EJEMPLOS ADICIONALES PARA PRUEBAS AVANZADAS**
+
+Secuencia Compleja de Agarrar Objeto**
+```
+Robot r3
+r3.iniciar
+r3.garra = 0
+r3.velocidad = 30
+r3.base = 180
+r3.velocidad = 25
+r3.hombro = 120
+r3.velocidad = 20
+r3.codo = 150
+r3.velocidad = 20
+r3.hombro = 90
+r3.velocidad = 15
+r3.codo = 180
+r3.velocidad = 15
+r3.garra = 90
+r3.velocidad = 40
+r3.hombro = 60
+r3.velocidad = 20
+r3.codo = 120
+r3.velocidad = 18
+r3.base = 0
+r3.velocidad = 25
+r3.hombro = 45
+r3.velocidad = 22
+r3.codo = 90
+r3.velocidad = 20
+r3.hombro = 0
+r3.velocidad = 18
+r3.codo = 0
+r3.velocidad = 18
+r3.garra = 0
+r3.velocidad = 35
+r3.hombro = 30
+r3.velocidad = 20
+r3.codo = 45
+r3.velocidad = 20
+r3.finalizar
+
+EJEMPLO 5: Repetición con 3 Ciclos**
+
+Robot r1
+r1.iniciar
+r1.repetir = 3 {
+    r1.garra = 0
+    r1.velocidad = 30
+    r1.base = 90
+    r1.velocidad = 35
+    r1.hombro = 90
+    r1.velocidad = 30
+    r1.garra = 90
+    r1.velocidad = 40
+    r1.base = 0
+    r1.velocidad = 35
+    r1.hombro = 0
+    r1.velocidad = 30
+}
+r1.finalizar
+
+----FUNCIONA BIEN---------------
+
+Robot r3
+r3.iniciar
+r3.base = 180
+r3.velocidad = 40
+r3.codo = 180
+r3.velocidad = 30
+r3.hombro = 90
+r3.velocidad = 35
+r3.garra = 90
+r3.velocidad = 45
+r3.base = 0
+r3.velocidad = 40
+r3.codo = 0
+r3.velocidad = 30
+r3.hombro = 0
+r3.velocidad = 35
+r3.garra = 0
+r3.velocidad = 45
+r3.finalizar
+
+
+Robot r2
+r2.iniciar
+r2.base = 90
+r2.velocidad = 50
+r2.codo = 45
+r2.velocidad = 40
+r2.hombro = 45
+r2.velocidad = 45
+r2.garra = 30
+r2.velocidad = 55
+r2.finalizar
+
+
+
+
+CONVINADO 
+
+
+
+Robot r2
+r2.iniciar
+r2.base = 90
+r2.velocidad = 50
+r2.codo = 45
+r2.velocidad = 40
+r2.hombro = 45
+r2.velocidad = 45
+r2.garra = 30
+r2.velocidad = 55
+r2.repetir = 2 {
+    r2.garra = 0
+    r2.velocidad = 35
+    r2.base = 180
+    r2.velocidad = 45
+    r2.hombro = 135
+    r2.velocidad = 40
+    r2.codo = 90
+    r2.velocidad = 35
+    r2.garra = 90
+    r2.velocidad = 50
+    r2.base = 0
+    r2.velocidad = 45
+    r2.hombro = 0
+    r2.velocidad = 40
+    r2.codo = 0
+    r2.velocidad = 35
+}
+r2.finalizar
+
+
+
+
+
+
+Robot r3
+r3.iniciar
+r3.base = 30        
+r3.velocidad = 40   
+r3.hombro = 15      
+r3.velocidad = 60  
+r3.codo = 45         
+r3.velocidad = 30  
+r3.garra = 80       
+r3.velocidad = 25   
+r3.finalizar

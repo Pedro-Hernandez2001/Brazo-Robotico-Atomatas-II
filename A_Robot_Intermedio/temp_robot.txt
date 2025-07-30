@@ -1,0 +1,4 @@
+Robot r1 r2 r3
+r1.base=90
+r2.hombro=45
+r3.garra=50
